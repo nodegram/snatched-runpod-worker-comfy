@@ -55,11 +55,11 @@ def validate_input(job_input):
     images = job_input.get("images")
     if images is not None:
         if not isinstance(images, list) or not all(
-            "name" in image and "image" in image for image in images
+            "name" in image and ("image" in image or "imageUrl" in image) for image in images
         ):
             return (
                 None,
-                "'images' must be a list of objects with 'name' and 'image' keys",
+                "'images' must be a list of objects with 'name' and either 'image' (base64) or 'imageUrl' keys",
             )
 
     # Return validated data and no error
@@ -102,14 +102,17 @@ def check_server(url, retries=500, delay=50):
 
 def upload_images(images):
     """
-    Upload a list of base64 encoded images to the ComfyUI server using the /upload/image endpoint.
+    Upload images to the ComfyUI server using the /upload/image endpoint.
+    Supports both base64 encoded images and image URLs.
 
     Args:
-        images (list): A list of dictionaries, each containing the 'name' of the image and the 'image' as a base64 encoded string.
-        server_address (str): The address of the ComfyUI server.
+        images (list): A list of dictionaries, each containing:
+            - 'name': name of the image
+            - 'image': base64 encoded string (optional)
+            - 'imageUrl': URL of the image (optional)
 
     Returns:
-        list: A list of responses from the server for each image upload.
+        dict: Status and details of the upload operation
     """
     if not images:
         return {"status": "success", "message": "No images to upload", "details": []}
@@ -121,21 +124,33 @@ def upload_images(images):
 
     for image in images:
         name = image["name"]
-        image_data = image["image"]
-        blob = base64.b64decode(image_data)
 
-        # Prepare the form data
-        files = {
-            "image": (name, BytesIO(blob), "image/png"),
-            "overwrite": (None, "true"),
-        }
+        try:
+            # Handle image from URL
+            if "imageUrl" in image:
+                response = requests.get(image["imageUrl"])
+                if response.status_code != 200:
+                    raise Exception(f"Failed to download image from URL: {response.text}")
+                blob = response.content
+            # Handle base64 encoded image
+            else:
+                blob = base64.b64decode(image["image"])
 
-        # POST request to upload the image
-        response = requests.post(f"http://{COMFY_HOST}/upload/image", files=files)
-        if response.status_code != 200:
-            upload_errors.append(f"Error uploading {name}: {response.text}")
-        else:
-            responses.append(f"Successfully uploaded {name}")
+            # Prepare the form data
+            files = {
+                "image": (name, BytesIO(blob), "image/png"),
+                "overwrite": (None, "true"),
+            }
+
+            # POST request to upload the image
+            response = requests.post(f"http://{COMFY_HOST}/upload/image", files=files)
+            if response.status_code != 200:
+                upload_errors.append(f"Error uploading {name}: {response.text}")
+            else:
+                responses.append(f"Successfully uploaded {name}")
+
+        except Exception as e:
+            upload_errors.append(f"Error processing {name}: {str(e)}")
 
     if upload_errors:
         print(f"runpod-worker-comfy - image(s) upload with errors")
