@@ -5,10 +5,6 @@
       "hash": "65e6903eff274a50f8b5cd768f0f96baf37baea1",
       "disabled": false
     },
-    "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait": {
-      "hash": "3bba732915e22f18af0d221b9c5c282990181f1b",
-      "disabled": true
-    },
     "https://github.com/city96/ComfyUI-GGUF": {
       "hash": "5875c52f59baca3a9372d68c43a3775e21846fe0",
       "disabled": false
@@ -17,8 +13,20 @@
       "hash": "5e5867528d1e404f8d30f9006494227ae4f05601",
       "disabled": false
     },
+    "https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92": {
+      "hash": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+      "disabled": false
+    },
     "https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl": {
       "hash": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
+      "disabled": false
+    },
+    "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper": {
+      "hash": "e2ae9b62c53a7c2e009f2448975c6909c83f73b5",
+      "disabled": true
+    },
+    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes": {
+      "hash": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
       "disabled": false
     },
     "https://github.com/cubiq/ComfyUI_essentials": {
@@ -57,6 +65,10 @@
       "hash": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
       "disabled": false
     },
+    "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait": {
+      "hash": "3bba732915e22f18af0d221b9c5c282990181f1b",
+      "disabled": true
+    },
     "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll.git": {
       "hash": "fa1e370c4544a496b729f83754f9b5d85a0043e5",
       "disabled": true
@@ -72,6 +84,7 @@
     "comfyui-inpaint-nodes": "1.0.3",
     "comfyui-jakeupgrade": "1.8.8",
     "comfyui-kjnodes": "1.0.3",
+    "comfyui-mixlab-nodes": "0.46.0",
     "comfyui-rmbg": "1.5.0",
     "comfyui_controlnet_aux": "1.0.5",
     "comfyui_ipadapter_plus": "2.0.0",
