@@ -40,42 +40,6 @@
     "https://github.com/rgthree/rgthree-comfy": {
       "hash": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
       "disabled": false
-    },
-    "https://github.com/giriss/comfy-image-saver": {
-      "hash": "65e6903eff274a50f8b5cd768f0f96baf37baea1",
-      "disabled": true
-    },
-    "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait": {
-      "hash": "3bba732915e22f18af0d221b9c5c282990181f1b",
-      "disabled": true
-    },
-    "https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92": {
-      "hash": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
-      "disabled": true
-    },
-    "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper": {
-      "hash": "e2ae9b62c53a7c2e009f2448975c6909c83f73b5",
-      "disabled": true
-    },
-    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes": {
-      "hash": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
-      "disabled": true
-    },
-    "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll.git": {
-      "hash": "fa1e370c4544a496b729f83754f9b5d85a0043e5",
-      "disabled": true
-    },
-    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale": {
-      "hash": "ff3fdfeee03de46d4462211cffd165d27155e858",
-      "disabled": true
-    },
-    "https://github.com/M1kep/Comfy_KepListStuff": {
-      "hash": "97320545f9d40bc5c3f63c614c37fcbe88a7dc3d",
-      "disabled": true
-    },
-    "https://github.com/BadCafeCode/masquerade-nodes-comfyui": {
-      "hash": "432cb4d146a391b387a0cd25ace824328b5b61cf",
-      "disabled": true
     }
   },
   "cnr_custom_nodes": {
