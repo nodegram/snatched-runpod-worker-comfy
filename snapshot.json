@@ -1,10 +1,6 @@
 {
   "comfyui": "3aaabb12d422eb35cd0314a09582c0a47d505a37",
   "git_custom_nodes": {
-    "https://github.com/giriss/comfy-image-saver": {
-      "hash": "65e6903eff274a50f8b5cd768f0f96baf37baea1",
-      "disabled": false
-    },
     "https://github.com/city96/ComfyUI-GGUF": {
       "hash": "5875c52f59baca3a9372d68c43a3775e21846fe0",
       "disabled": false
@@ -13,20 +9,8 @@
       "hash": "5e5867528d1e404f8d30f9006494227ae4f05601",
       "disabled": false
     },
-    "https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92": {
-      "hash": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
-      "disabled": false
-    },
     "https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl": {
       "hash": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
-      "disabled": false
-    },
-    "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper": {
-      "hash": "e2ae9b62c53a7c2e009f2448975c6909c83f73b5",
-      "disabled": true
-    },
-    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes": {
-      "hash": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
       "disabled": false
     },
     "https://github.com/cubiq/ComfyUI_essentials": {
@@ -35,6 +19,10 @@
     },
     "https://github.com/yichengup/Comfyui_Flux_Style_Adjust": {
       "hash": "45b561612588ceefb0938d163b106057bb44e516",
+      "disabled": false
+    },
+    "https://github.com/JPS-GER/ComfyUI_JPS-Nodes": {
+      "hash": "0e2a9aca02b17dde91577bfe4b65861df622dcaf",
       "disabled": false
     },
     "https://github.com/chflame163/ComfyUI_LayerStyle.git": {
@@ -49,42 +37,53 @@
       "hash": "ab6395596399d5048639cdab7e44ec9fae857a93",
       "disabled": false
     },
-    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale": {
-      "hash": "ff3fdfeee03de46d4462211cffd165d27155e858",
-      "disabled": true
-    },
-    "https://github.com/M1kep/Comfy_KepListStuff": {
-      "hash": "97320545f9d40bc5c3f63c614c37fcbe88a7dc3d",
-      "disabled": false
-    },
-    "https://github.com/BadCafeCode/masquerade-nodes-comfyui": {
-      "hash": "432cb4d146a391b387a0cd25ace824328b5b61cf",
-      "disabled": false
-    },
     "https://github.com/rgthree/rgthree-comfy": {
       "hash": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
+      "disabled": false
+    },
+    "https://github.com/giriss/comfy-image-saver": {
+      "hash": "65e6903eff274a50f8b5cd768f0f96baf37baea1",
       "disabled": true
     },
     "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait": {
       "hash": "3bba732915e22f18af0d221b9c5c282990181f1b",
       "disabled": true
     },
+    "https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92": {
+      "hash": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+      "disabled": true
+    },
+    "https://github.com/chflame163/ComfyUI_CatVTON_Wrapper": {
+      "hash": "e2ae9b62c53a7c2e009f2448975c6909c83f73b5",
+      "disabled": true
+    },
+    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes": {
+      "hash": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
+      "disabled": true
+    },
     "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll.git": {
       "hash": "fa1e370c4544a496b729f83754f9b5d85a0043e5",
+      "disabled": true
+    },
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale": {
+      "hash": "ff3fdfeee03de46d4462211cffd165d27155e858",
+      "disabled": true
+    },
+    "https://github.com/M1kep/Comfy_KepListStuff": {
+      "hash": "97320545f9d40bc5c3f63c614c37fcbe88a7dc3d",
+      "disabled": true
+    },
+    "https://github.com/BadCafeCode/masquerade-nodes-comfyui": {
+      "hash": "432cb4d146a391b387a0cd25ace824328b5b61cf",
       "disabled": true
     }
   },
   "cnr_custom_nodes": {
-    "comfyui-advanced-controlnet": "1.5.2",
     "comfyui-easy-use": "1.2.6",
     "comfyui-impact-pack": "8.3.1",
     "comfyui-impact-subpack": "1.2.6",
     "comfyui-in-context-lora-utils": "1.0.0",
-    "comfyui-inpaint-nodes": "1.0.3",
-    "comfyui-kjnodes": "1.0.3",
-    "comfyui-mixlab-nodes": "0.46.0",
-    "comfyui_controlnet_aux": "1.0.5",
-    "comfyui_ipadapter_plus": "2.0.0"
+    "comfyui-inpaint-nodes": "1.0.3"
   },
   "file_custom_nodes": [
     {
