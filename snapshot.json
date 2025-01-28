@@ -9,8 +9,20 @@
       "hash": "5e5867528d1e404f8d30f9006494227ae4f05601",
       "disabled": false
     },
+    "https://github.com/omar92/ComfyUI-QualityOfLifeSuit_Omar92": {
+      "hash": "f09d10dea0afbd3984a284acf8f0913a634e36ec",
+      "disabled": false
+    },
+    "https://github.com/neverbiasu/ComfyUI-SAM2": {
+      "hash": "541018a1963bf148596a69bf49c2a4f17deb591a",
+      "disabled": false
+    },
     "https://github.com/kaibioinfo/ComfyUI_AdvancedRefluxControl": {
       "hash": "0a87efa252ae5e8f4af1225b0e19c867f908376a",
+      "disabled": false
+    },
+    "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes": {
+      "hash": "d78b780ae43fcf8c6b7c6505e6ffb4584281ceca",
       "disabled": false
     },
     "https://github.com/cubiq/ComfyUI_essentials": {
@@ -47,7 +59,10 @@
     "comfyui-impact-pack": "8.3.1",
     "comfyui-impact-subpack": "1.2.6",
     "comfyui-in-context-lora-utils": "1.0.0",
-    "comfyui-inpaint-nodes": "1.0.3"
+    "comfyui-inpaint-nodes": "1.0.3",
+    "comfyui-kjnodes": "1.0.5",
+    "comfyui-mixlab-nodes": "0.46.0",
+    "comfyui-rmbg": "1.5.0"
   },
   "file_custom_nodes": [
     {
@@ -334,7 +349,7 @@
     "win32_setctime==1.2.0": "",
     "wrapt==1.17.1": "",
     "xatlas==0.0.9": "",
-    "xformers": "",
+    "xformers==0.0.29.post1": "",
     "xxhash==3.5.0": "",
     "yacs==0.1.8": "",
     "yapf==0.43.0": "",
