@@ -61,7 +61,6 @@
     "comfyui-in-context-lora-utils": "1.0.0",
     "comfyui-inpaint-nodes": "1.0.3",
     "comfyui-kjnodes": "1.0.5",
-    "comfyui-mixlab-nodes": "0.46.0",
     "comfyui-rmbg": "1.5.0"
   },
   "file_custom_nodes": [
