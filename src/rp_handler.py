@@ -22,6 +22,8 @@ COMFY_HOST = "127.0.0.1:8188"
 # Enforce a clean state after each job is done
 # see https://docs.runpod.io/docs/handler-additional-controls#refresh-worker
 REFRESH_WORKER = os.environ.get("REFRESH_WORKER", "false").lower() == "true"
+# Upload Bucket Name
+BUCKET_NAME = os.environ.get("BUCKET_NAME", None)
 
 
 def validate_input(job_input):
@@ -265,7 +267,7 @@ def process_output_images(outputs, job_id):
     if os.path.exists(local_image_path):
         if os.environ.get("BUCKET_ENDPOINT_URL", False):
             # URL to image in AWS S3
-            image = rp_upload.upload_image(job_id, local_image_path)
+            image = rp_upload.upload_image(job_id, local_image_path, bucket_name=BUCKET_NAME)
             print(
                 "runpod-worker-comfy - the image was generated and uploaded to AWS S3"
             )
