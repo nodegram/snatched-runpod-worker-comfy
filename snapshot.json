@@ -1,6 +1,10 @@
 {
   "comfyui": "3aaabb12d422eb35cd0314a09582c0a47d505a37",
   "git_custom_nodes": {
+    "https://github.com/djbielejeski/a-person-mask-generator": {
+      "hash": "d4d155e0b10bdc303ecff2aed6299ba44851f20a",
+      "disabled": true
+    },
     "https://github.com/city96/ComfyUI-GGUF": {
       "hash": "5875c52f59baca3a9372d68c43a3775e21846fe0",
       "disabled": false
@@ -49,9 +53,25 @@
       "hash": "ab6395596399d5048639cdab7e44ec9fae857a93",
       "disabled": false
     },
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale": {
+      "hash": "ff3fdfeee03de46d4462211cffd165d27155e858",
+      "disabled": true
+    },
+    "https://github.com/WASasquatch/was-node-suite-comfyui": {
+      "hash": "393aecf91fe193f292f02421ac8262cc88ed2875",
+      "disabled": false
+    },
     "https://github.com/rgthree/rgthree-comfy": {
       "hash": "5d771b8b56a343c24a26e8cea1f0c87c3d58102f",
       "disabled": false
+    },
+    "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait": {
+      "hash": "3bba732915e22f18af0d221b9c5c282990181f1b",
+      "disabled": true
+    },
+    "https://github.com/lldacing/ComfyUI_PuLID_Flux_ll.git": {
+      "hash": "fa1e370c4544a496b729f83754f9b5d85a0043e5",
+      "disabled": true
     }
   },
   "cnr_custom_nodes": {
@@ -61,7 +81,10 @@
     "comfyui-in-context-lora-utils": "1.0.0",
     "comfyui-inpaint-nodes": "1.0.3",
     "comfyui-kjnodes": "1.0.5",
-    "comfyui-rmbg": "1.5.0"
+    "comfyui-mixlab-nodes": "0.46.0",
+    "comfyui-rmbg": "1.5.0",
+    "comfyui_controlnet_aux": "1.0.5",
+    "comfyui_ipadapter_plus": "2.0.0"
   },
   "file_custom_nodes": [
     {
