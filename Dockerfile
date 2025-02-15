@@ -37,6 +37,9 @@ WORKDIR /comfyui
 # Install runpod
 RUN pip install runpod requests
 
+# Install needed dependencies
+RUN pip install piexif pyOpenSSL
+
 # Support for the network volume
 ADD src/extra_model_paths.yaml ./
 
