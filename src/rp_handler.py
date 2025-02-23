@@ -15,8 +15,8 @@ COMFY_API_AVAILABLE_INTERVAL_MS = 100
 COMFY_API_AVAILABLE_MAX_RETRIES = 1500
 # Time to wait between poll attempts in milliseconds
 COMFY_POLLING_INTERVAL_MS = int(os.environ.get("COMFY_POLLING_INTERVAL_MS", 250))
-# Maximum number of poll attempts
-COMFY_POLLING_MAX_RETRIES = int(os.environ.get("COMFY_POLLING_MAX_RETRIES", 500))
+# Maximum number of poll attempts (1000 retries * 250ms = 250000ms ~= 4 minutes)
+COMFY_POLLING_MAX_RETRIES = int(os.environ.get("COMFY_POLLING_MAX_RETRIES", 1000))
 # Host where ComfyUI is running
 COMFY_HOST = "127.0.0.1:8188"
 # Enforce a clean state after each job is done
